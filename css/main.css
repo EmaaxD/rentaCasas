@@ -1,0 +1,303 @@
+@import url("https://fonts.googleapis.com/css?family=Caveat|Mali");
+
+:root {
+  --mainDark: #242325;
+  --mainGreen: #61e786;
+  --mainWhite: #fff;
+  --mainGrey: #eeeeee;
+}
+
+body {
+  font-family: "Mali", cursive;
+  background: var(--mainWhite);
+  color: var(--mainDark);
+}
+
+/*Globales*/
+	.text-green{
+		color: var(--mainGreen);
+	}
+
+	.text-slant {
+		font-family: "Caveat", cursive;
+	}
+
+	.green__btn {
+		background: transparent;
+		color: var(--mainGreen);
+		border: 0.1rem solid var(--mainGreen);
+	}
+
+	.green__btn:hover {
+		background: var(--mainGreen);
+		color: var(--mainWhite);
+	}
+
+	.title-underline {
+		width: 12rem;
+		height: 0.2rem;
+		margin: 0 auto;
+		position: relative;
+		border-radius: 2rem;
+	}
+
+	.title-underline-center {
+		position: absolute;
+		height: 0.3rem;
+		background: var(--mainGreen);
+		width: 50%;
+		left: 50%;
+		top: 50%;
+		transform: translate(-50%,-50%);
+		border-radius: 1rem;
+	}
+
+	.blockquote {
+		border-left: 0.2rem solid var(--mainGreen);
+	}
+
+/*Header*/
+
+	.navbar {
+		background: var(--mainDark)!important;
+	}
+
+	.phone-icon {
+		color: var(--mainGreen);
+		border: 0.1rem solid var(--mainGreen);
+		padding: 0.5rem;
+		border-radius: 50%;
+	}
+
+	.banner-info {
+		min-height: calc(100vh - 101px);
+		background: var(--mainGrey);
+		position: relative;
+	}
+
+	.banner-info-footer {
+		background: var(--mainGreen);
+		position: absolute;
+		bottom: 0;
+		left: 0;
+		width: 100%;
+	}
+
+	.banner-img {
+		min-height: calc(100vh - 101px);
+		background: url('../img/bannerBcg.jpeg')center/cover fixed no-repeat;
+		position: relative;
+	}
+
+	.banner-img-footer {
+		background: var(--mainDark);
+		position: absolute;
+		bottom: 0;
+		left: 0;
+		height: 104px;
+		display: flex;
+		align-items: center;
+	}
+
+/*About*/
+
+	.img-container {
+		position: relative;
+
+	}
+
+	.featured-icons {
+		position: absolute;
+		bottom: 0;
+		left: 50%;
+		transform: translate(-50%);
+	}
+
+	.feature-icon-left {
+		background: var(--mainDark);
+		padding: 0.5rem;
+		display: inline-block;
+		color: var(--mainWhite);
+	}
+
+	.feature-icon-right {
+		background: var(--mainGreen);
+		padding: 0.5rem;
+		display: inline-block;
+		color: var(--mainWhite);
+	}
+
+/*Featured*/
+
+	.featured {
+		background: var(--mainGrey);
+	}	
+
+	.featured .card {
+		transition: all .3s ease;
+	}
+
+	.featured .card:hover {
+		transform: scale(1.1);
+    	/*border: 1px solid var(--mainGreen);*/
+    	box-shadow: 0px 0px 50px #666
+	}
+
+/*Contact*/
+	.contact {
+		background: var(--mainGreen);
+		color: var(--mainWhite);
+	}	
+
+	.contact-btn {
+		background: transparent;
+		border: 0.1rem solid var(--mainWhite);
+		color: var(--mainWhite);
+	}
+
+	.contact-btn:hover {
+		background: var(--mainWhite);
+		color: var(--mainGreen);
+	}
+
+/*Services*/
+
+	.services {
+		background: linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.7)),url('../img/bannerBcg.jpeg')center/cover fixed no-repeat;
+	}
+
+	.services-info-text {
+		position: absolute;
+		bottom: 0;
+		left: 50%;
+		transform: translate(-50%);
+		background: var(--mainGreen);
+		color: var(--mainWhite)!important;
+		margin-bottom: 0;
+		text-decoration: none!important;
+		transition: all .5s;
+		text-align: center;
+	}
+
+	.services-info-text:hover {
+		color: var(--mainDark)!important;
+	}
+
+	.service-icon {
+		font-size: 2rem;
+		color: var(--mainGreen);
+		padding: 0.5rem;
+		border: 0.1rem solid var(--mainGreen);
+		margin-right: 1rem;
+		transition: all .3s ease-in-out;
+	}
+
+	.service-icon:hover {
+		background: var(--mainGreen);
+		color: var(--mainWhite);
+	}
+
+	.service-link {
+		color: var(--mainWhite);
+		text-decoration: none!important;
+	}
+
+	.service-link:hover {
+		color: var(--mainGreen)!important;
+	}
+
+	#service .img-container {
+		margin: 12rem 0 0 0;
+	}
+
+/*Galeria*/
+
+	.gallery-btn {
+		background: transparent!important;
+	}
+
+	.gallery-btn:hover {
+		background: var(--mainGreen)!important;
+		color: var(--mainWhite);
+		/*border-bottom: 0.1rem solid var(--mainGreen);*/
+	}
+
+	.gallery-img-container {
+		position: relative;
+		transition: all .4s linear;
+		overflow: hidden;
+	}
+
+	.gallery-img-container:hover {
+		background: rgba(0,0,0,0.9);
+	}
+
+	.gallery-img  {
+		transition: all 1s linear;
+	}
+
+	.gallery-img-container:hover .gallery-img {
+		opacity: 0.6;
+	}
+
+	.gallery-info {
+		position: absolute;
+		bottom: 0;
+		left: 50%;
+		transform: translate(-50%,100%);
+		background: var(--mainGreen);
+		color: var(--mainWhite);
+		text-decoration: none!important;
+		transition: all 0.3s linear;
+	}
+
+	.gallery-info:hover {
+		color: var(--mainDark)!important;
+	}
+
+	.gallery-img-container:hover .gallery-info {
+		transform: translate(-50%,0);
+	}
+
+	.gallery-icon {
+		position: absolute;color: var(--mainWhite);
+		top: 50%;
+		left: 50%;
+		font-size: 2rem;
+		transform: translate(-50%,-50%);
+		opacity: 0;
+		transition: all 0.3s linear;
+		cursor: pointer;
+	}
+
+	.gallery-img-container:hover .gallery-icon {
+		opacity: 1;
+	}
+
+/*Vitural Tour*/
+	
+	.tour {
+		background: linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.7)),url('../img/bannerBcg.jpeg')center/cover fixed no-repeat;
+	}
+
+	.tour-icon {
+		color: var(--mainGreen);
+		margin-bottom: 1rem;
+		padding: 0.75rem;
+		border: 0.1rem solid var(--mainWhite);
+		font-size: 2rem;
+		cursor: pointer;
+		transition: all .2s linear;
+
+	}
+
+	.tour-icon:hover {
+		border-radius: 50%!important;
+		color: var(--mainDark);
+	}
+
+/*Footer*/
+
+	.footer {
+		background: var(--mainDark);
+	}	
